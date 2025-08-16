@@ -1,0 +1,36 @@
+# 大模型算法岗位核心编程面试题
+
+## Transformer核心组件（最高频）
+- [ ] 实现多头自注意力机制（Multi-Head Self-Attention）
+- [ ] 实现位置编码（Positional Encoding）
+- [ ] 实现Layer Normalization
+- [ ] 实现Transformer Encoder Block
+- [ ] 实现Transformer Decoder Block
+
+## 大模型关键技术
+- [ ] 实现Causal Mask（因果掩码）
+- [ ] 实现RoPE位置编码
+- [ ] 实现Group Query Attention (GQA)
+- [ ] 实现Flash Attention的简化版本
+- [ ] 实现KV Cache机制
+
+## 训练优化核心
+- [ ] 实现Adam优化器
+- [ ] 实现梯度裁剪（Gradient Clipping）
+- [ ] 实现学习率调度器（Cosine、Warmup）
+- [ ] 实现梯度累积
+- [ ] 实现混合精度训练基础
+
+## 损失函数和评估
+- [ ] 实现交叉熵损失函数
+- [ ] 实现Softmax函数及其数值稳定版本
+- [ ] 实现Top-k和Top-p采样
+- [ ] 实现BLEU评分计算
+- [ ] 实现困惑度（Perplexity）计算
+
+## 推理优化
+- [ ] 实现Beam Search解码
+- [ ] 实现贪心解码和随机采样
+- [ ] 实现模型量化（INT8）
+- [ ] 实现模型并行化基础
+- [ ] 实现批量推理优化
