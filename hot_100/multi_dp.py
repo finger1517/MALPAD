@@ -45,7 +45,27 @@ def longestCommonSubsequence(text1, text2):
                 dp[i][j] = max(dp[i - 1][j], dp[i][j - 1])
     return dp[m][n]
 
-def minDistance(word1, word2):
+def minDistance(word1:str, word2:str)->int:
+    """
+    编辑距离（Levenshtein距离）动态规划解法
+    
+    状态定义：dp[i][j] 表示 word1[0:i] 转换为 word2[0:j] 的最小编辑距离
+    
+    状态转移方程：
+    - 当 word1[i-1] == word2[j-1] 时：
+      dp[i][j] = dp[i-1][j-1]  （字符相同，不需要操作）
+    
+    - 当 word1[i-1] != word2[j-1] 时：
+      dp[i][j] = min(
+          dp[i-1][j] + 1,     # 删除 word1[i-1]
+          dp[i][j-1] + 1,     # 插入 word2[j-1]
+          dp[i-1][j-1] + 1    # 替换 word1[i-1] 为 word2[j-1]
+      )
+    
+    边界条件：
+    - dp[i][0] = i  （word1[0:i] 转换为空串需要 i 次删除）
+    - dp[0][j] = j  （空串转换为 word2[0:j] 需要 j 次插入）
+    """
     m, n = len(word1), len(word2)
     dp = [[0] * (n + 1) for _ in range(m + 1)]
     for i in range(m + 1):
