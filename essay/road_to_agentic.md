@@ -57,3 +57,5 @@ Instragram
 
  - an efficient retrival system;
 
+# Agentic RAG
+1. 

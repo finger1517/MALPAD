@@ -103,6 +103,7 @@ def productExceptSelf(nums: List[int]) -> List[int]:
 
 def firstMissingPositive(nums: List[int]) -> int:
     """
+    交换法
     缺失的第一个正数
     
     问题：找到数组中缺失的最小正整数（要求时间复杂度 O(n)，空间复杂度 O(1)）

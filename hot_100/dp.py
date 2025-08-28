@@ -217,6 +217,7 @@ def lengthOfLIS(nums: List[int]) -> int:
 def maxProduct(nums: List[int]) -> int:
     """
     乘积最大子数组
+    两个dp数组，一个记录最大值，一个记录最小值
     
     问题：找出数组中乘积最大的连续子数组
     
@@ -260,6 +261,7 @@ def maxProduct(nums: List[int]) -> int:
 def canPartition(nums: List[int]) -> bool:
     """
     分割等和子集
+
     
     问题：判断数组是否可以分割成两个子集，使得两个子集的和相等
     
